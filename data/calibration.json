@@ -1,0 +1,162 @@
+[
+  {
+    "cal_id": "cal_clin_01_Q1",
+    "scenario_id": "clin_01",
+    "archetype": "Q1_transformational",
+    "expected": {
+      "surprise_min": 4,
+      "coherence_min": 4,
+      "realism_min": 4
+    },
+    "hypothesis": "Assumption Dropped: That steady-state 24-hour systemic plasma AUC of parent KVX-402 captures hepatic target engagement independent of circadian dosing timing.\nProposed Mechanism: Hepatic cholesterol synthesis and target-enzyme expression peak sharply during the nocturnal fasting window (midnight-4 AM). Group A hospitals' standard inpatient/clinic dispensing protocols instruct evening post-dinner dosing, aligning the transient portal-vein C_max spike of KVX-402 with peak nocturnal enzyme synthesis, whereas Group B hospitals follow standard morning dosing, producing identical 24-hour systemic AUC (satisfying E1) but missing the hepatic peak and triggering compensatory daytime SREBP-2 upregulation (+4.1% LDL). This requires no genetic/dietary differences (E2), explains immediate -31.8% restoration when Group B patients adopt Group A's clinic protocol with the same drug lots (E3), and produces zero effect in placebo arms (E4).\nFalsifiable Prediction: Randomizing patients within a single Group B hospital to evening vs. morning dosing of KVX-402 while holding dose fixed will reproduce the entire -34% vs. +4% efficacy split within 6 weeks."
+  },
+  {
+    "cal_id": "cal_clin_01_Q2",
+    "scenario_id": "clin_01",
+    "archetype": "Q2_incremental",
+    "expected": {
+      "surprise_max": 2,
+      "realism_min": 4
+    },
+    "hypothesis": "Proposed Mechanism: The observed difference between Group A and Group B likely reflects minor unmeasured random variation in patient adherence, slight unrecorded differences in lipid-lowering dose sensitivity, and natural multi-center heterogeneity in standard Phase-III clinical trials. Adjusting the pharmacokinetic dose-response curve parameters with random hospital-level slope effects and slightly increasing the target dose of KVX-402 across Group B centers should smooth out the center-level variance and improve pooled efficacy.\nFalsifiable Prediction: Running a larger Phase-IV trial with tighter adherence monitoring and a 20% higher dose will reduce inter-hospital variance."
+  },
+  {
+    "cal_id": "cal_clin_01_Q3",
+    "scenario_id": "clin_01",
+    "archetype": "Q3_unrealistic_scifi",
+    "expected": {
+      "realism_max": 2
+    },
+    "hypothesis": "Assumption Dropped: That pharmacological molecules act strictly through local biochemical collisions rather than macroscopic quantum-coherence fields.\nProposed Mechanism: Group A hospitals sit atop subterranean quartz-rich geomagnetic fault lines that induce room-temperature macroscopic quantum spin entanglement across the KVX-402 pills' molecular orbitals, amplifying their binding affinity to hepatic receptors without altering classical LC-MS/MS mass spectra or plasma AUC. When Group B patients physically travel to Group A buildings, their pills become resonantly aligned with the local geomagnetic field, unlocking -31.8% LDL reduction while inert placebo pills remain unaffected.\nFalsifiable Prediction: Placing Faraday-and-mu-metal quantum-decoherence shields around Group A hospital pharmacies will abolish KVX-402 efficacy."
+  },
+  {
+    "cal_id": "cal_clin_01_Q4",
+    "scenario_id": "clin_01",
+    "archetype": "Q4_data_contradicting",
+    "expected": {
+      "coherence_max": 2,
+      "realism_min": 3
+    },
+    "hypothesis": "Assumption Dropped: That cold-chain drug stability and patient dietary compliance were uniform across trial sites.\nProposed Mechanism: Group B hospitals experienced degraded pharmacy storage temperatures that hydrolyzed 70% of the KVX-402 active ingredient into inactive breakdown products prior to dispensing, lowering effective plasma drug exposure. Additionally, Group A hospitals served a heart-healthy Mediterranean ward diet that lowered patient LDL across the board, explaining why patients who transferred to Group A rapidly improved.\nFalsifiable Prediction: Chemical assaying of Group B tablets will show degraded purity and lower plasma AUC."
+  },
+  {
+    "cal_id": "cal_phys_01_Q1",
+    "scenario_id": "phys_01",
+    "archetype": "Q1_transformational",
+    "expected": {
+      "surprise_min": 4,
+      "coherence_min": 4,
+      "realism_min": 4
+    },
+    "hypothesis": "Assumption Dropped: That thermal transport in sub-100 nm dielectric films is purely bulk-like diffusive phonon conduction unaffected by substrate-coupled surface phonon-polaritons (SPhPs).\nProposed Mechanism: In polar oxides like Sr2TiO4 on MgO, coherent tensile strain below the 120 nm critical relaxation thickness aligns the Reststrahlen optical-phonon bands of Sr2TiO4 and MgO, opening a high-group-velocity coupled surface phonon-polariton (evanescent electromagnetic-lattice) heat-transport channel along the film-substrate waveguide. Because SPhP propagation lengths reach tens of microns and bypass diffuse boundary scattering while carrying zero electrical charge, kappa_eff rises to 18.4 W/m*K in both TDTR and 3-omega despite >10^11 Ohm*cm resistivity (E1, E2). Growing on compressive LaAlO3 or exfoliating onto amorphous SiO2 destroys the tensile band alignment and MgO dielectric matching immediately (E3). At 80 K, the Bose-Einstein thermal occupation of high-frequency optical phonon modes (~40-80 meV) collapses exponentially, shutting off the SPhP channel and restoring ordinary Casimir scaling (E4).\nFalsifiable Prediction: Measuring kappa_eff vs. temperature from 80 K to 400 K will reveal an Arrhenius-like turn-on matching the optical phonon energy, and near-field s-SNOM infrared spectroscopy will directly image propagating SPhP fringes in 35 nm Sr2TiO4/MgO that vanish on LaAlO3."
+  },
+  {
+    "cal_id": "cal_phys_01_Q2",
+    "scenario_id": "phys_01",
+    "archetype": "Q2_incremental",
+    "expected": {
+      "surprise_max": 2,
+      "realism_min": 4
+    },
+    "hypothesis": "Proposed Mechanism: The elevated thermal conductivity in thinner Sr2TiO4 films likely results from slightly improved crystalline grain size and lower point-defect density during shorter epitaxial growth times, reducing standard Rayleigh impurity scattering parameters within the conventional Callaway phonon-transport model. Refitting the specularity parameter p and impurity scattering coefficient A as thickness-dependent constants can capture the trend.\nFalsifiable Prediction: Annealing thicker 500 nm films to reduce point defects will increase their thermal conductivity toward the thin-film values."
+  },
+  {
+    "cal_id": "cal_phys_01_Q3",
+    "scenario_id": "phys_01",
+    "archetype": "Q3_unrealistic_scifi",
+    "expected": {
+      "realism_max": 2
+    },
+    "hypothesis": "Assumption Dropped: That heat conservation obeys local 3D thermodynamics in nanoscale perovskite lattices.\nProposed Mechanism: Below 120 nm on MgO, the strained perovskite unit cells open microscopic Casimir-vacuum zero-point energy conduits that teleport thermal excitations non-locally across the film via extra compactified spatial dimensions activated specifically at room-temperature ambient dark-matter flux densities, mimicking 18.4 W/m*K conductivity.\nFalsifiable Prediction: Operating the TDTR experiment in an underground dark-matter shielded cavern will eliminate the 18.4 W/m*K thermal enhancement."
+  },
+  {
+    "cal_id": "cal_phys_01_Q4",
+    "scenario_id": "phys_01",
+    "archetype": "Q4_data_contradicting",
+    "expected": {
+      "coherence_max": 2,
+      "realism_min": 3
+    },
+    "hypothesis": "Assumption Dropped: That the ultrathin Sr2TiO4 film remains electrically insulating.\nProposed Mechanism: Oxygen vacancies diffusing from MgO into the 35 nm film create a metallic two-dimensional electron gas (2DEG) whose Wiedemann-Franz electronic thermal conductivity drives kappa_eff up to 18.4 W/m*K. Furthermore, the TDTR pump laser penetrates straight through the transparent 35 nm film and directly measures the high thermal conductivity of the underlying MgO substrate.\nFalsifiable Prediction: Four-probe sheet-resistance measurements on the 35 nm film will show low metallic resistivity below 10^-3 Ohm*cm."
+  },
+  {
+    "cal_id": "cal_ecol_01_Q1",
+    "scenario_id": "ecol_01",
+    "archetype": "Q1_transformational",
+    "expected": {
+      "surprise_min": 4,
+      "coherence_min": 4,
+      "realism_min": 4
+    },
+    "hypothesis": "Assumption Dropped: That standing kelp biomass is nutritionally invariant rather than mounting inducible chemical defenses triggered by intense early grazing.\nProposed Mechanism: During months 1-4, the 2.1x surge in juvenile urchin recruitment (E3) inflicted acute high-density grazing on the kelp canopy inside exclusion plots, pushing kelp past a systemic elicitation threshold for high-molecular-weight polyphenolic phlorotannin synthesis (an inducible anti-herbivore defense). By month 7, the chemically defended kelp became functionally indigestible and mildly toxic to urchins, inducing chronic physiological starvation, elevated metabolic detoxification stress, stunted gonads, and mass non-predatory die-off with completely intact spines (E4) despite visually abundant kelp and identical water chemistry/cage integrity (E1, E2). In unfenced control plots, predators kept urchin grazing below the kelp defense threshold, maintaining palatable kelp and a stable urchin stock.\nFalsifiable Prediction: Assaying kelp tissue from exclusion plots at months 6-12 will show a >3x spike in phlorotannin concentration compared to controls, and feeding exclusion-plot kelp to healthy lab urchins will reproduce gonad stunting and mortality."
+  },
+  {
+    "cal_id": "cal_ecol_01_Q2",
+    "scenario_id": "ecol_01",
+    "archetype": "Q2_incremental",
+    "expected": {
+      "surprise_max": 2,
+      "realism_min": 4
+    },
+    "hypothesis": "Proposed Mechanism: The decline in exclusion-plot urchin biomass likely reflects standard logistic carrying-capacity overshoot and mild stochastic recruitment variability typical of coastal benthic populations. Adjusting the Lotka-Volterra intraspecific competition parameter alpha upward slightly will capture the oscillation around equilibrium within the standard consumer-resource framework.\nFalsifiable Prediction: Extending the experiment to year 8 will show exclusion-plot urchin biomass rebounding above controls as part of a normal predator-free limit cycle."
+  },
+  {
+    "cal_id": "cal_ecol_01_Q3",
+    "scenario_id": "ecol_01",
+    "archetype": "Q3_unrealistic_scifi",
+    "expected": {
+      "realism_max": 2
+    },
+    "hypothesis": "Assumption Dropped: That marine invertebrates lack collective psychic awareness of ecosystem balance.\nProposed Mechanism: In the absence of crabs and wrasses, purple sea urchins sense an impending ecological collapse through morphogenetic field resonance and voluntarily trigger altruistic programmed mass suicide so that the kelp forest can thrive, leaving their spines intact as a signal to future generations.\nFalsifiable Prediction: Broadcasting acoustic recordings of crab snapping will interrupt the morphogenetic suicide signal and halt mortality."
+  },
+  {
+    "cal_id": "cal_ecol_01_Q4",
+    "scenario_id": "ecol_01",
+    "archetype": "Q4_data_contradicting",
+    "expected": {
+      "coherence_max": 2,
+      "realism_min": 3
+    },
+    "hypothesis": "Assumption Dropped: That the exclusion cages preserved natural abiotic water flow and predator exclusion.\nProposed Mechanism: Biofouling on the exclusion cages restricted seawater circulation, causing localized hypoxia (severe dissolved-oxygen depletion) and thermal stratification that suffocated the urchins. Simultaneously, large predatory crabs burrowed underneath the cage mesh at night and crushed adult urchins, explaining the 68% biomass drop.\nFalsifiable Prediction: Measuring dissolved oxygen inside cages will reveal hypoxic zones (<2 mg/L) and video review will show crabs entering beneath the mesh."
+  },
+  {
+    "cal_id": "cal_econ_01_Q1",
+    "scenario_id": "econ_01",
+    "archetype": "Q1_transformational",
+    "expected": {
+      "surprise_min": 4,
+      "coherence_min": 4,
+      "realism_min": 4
+    },
+    "hypothesis": "Assumption Dropped: That bid dispersion on complex projects is pure search noise rather than a costly quality-signaling channel separating high-skill specialists from generalists.\nProposed Mechanism: In complex, high-variance projects where true talent is hard to observe ex ante, pricing well above the average previously served as a separating signal of top-decile competence while clients accepted wide bid spreads to infer quality tiers. Displaying a single AI median benchmark anchored clients to treat the median as a 'fair' quality-adjusted ceiling (triggering immediate week-2 match rejections on complex jobs despite unchanged budgets, E2, E3), while simultaneously acting as a focal-point floor that pulled low-cost bidders' proposals upward (+11.8% winning bids, -47% dispersion, -38% submission time, E4). Unable to credibly command quality premia, top-decile freelancers exited at 3.2x rate (Akerlof unraveling), whereas standardized tasks\u2014where quality is observable and homogeneous\u2014benefited from lower search friction (+4.2%, E3), with zero spillover to control categories (E1).\nFalsifiable Prediction: Replacing the single median estimate with quality-tiered benchmark percentiles (e.g., 25th/50th/90th percentile conditioned on verified freelancer tier) will restore complex-project match rates and halt top-decile exit."
+  },
+  {
+    "cal_id": "cal_econ_01_Q2",
+    "scenario_id": "econ_01",
+    "archetype": "Q2_incremental",
+    "expected": {
+      "surprise_max": 2,
+      "realism_min": 4
+    },
+    "hypothesis": "Proposed Mechanism: The drop in match rates likely stems from slight miscalibration in the AI estimator's regression weights, which introduced small prediction errors in median bid displays. Retraining the estimator with more recent features and slightly adjusting the UI placement of the suggested price range should align bids closer to equilibrium and recover the expected friction reduction.\nFalsifiable Prediction: Reducing the RMSE of the median-price estimator by 15% will reverse the match-rate decline."
+  },
+  {
+    "cal_id": "cal_econ_01_Q3",
+    "scenario_id": "econ_01",
+    "archetype": "Q3_unrealistic_scifi",
+    "expected": {
+      "realism_max": 2
+    },
+    "hypothesis": "Assumption Dropped: That market participants make decisions using classical utility functions.\nProposed Mechanism: Displaying an algorithmic price collapses the quantum superposition of freelancers' latent wage beliefs via a social observer effect, generating an entangled negative-entropy barrier in cyberspace that physically repels high-skill users from clicking the submit button on complex jobs.\nFalsifiable Prediction: Randomizing the font color of the estimator to avoid coherent observer collapse will restore match rates."
+  },
+  {
+    "cal_id": "cal_econ_01_Q4",
+    "scenario_id": "econ_01",
+    "archetype": "Q4_data_contradicting",
+    "expected": {
+      "coherence_max": 2,
+      "realism_min": 3
+    },
+    "hypothesis": "Assumption Dropped: That the new UI simplified the bidding process and kept client demand constant.\nProposed Mechanism: Adding the AI estimator widget cluttered the proposal interface, causing severe cognitive overload that slowed down freelancer bid submissions and discouraged participation. Simultaneously, seeing higher suggested prices caused clients to immediately slash their job postings and stated budgets in weeks 1-4, collapsing match volume equally across both simple and complex categories.\nFalsifiable Prediction: Telemetry logs will confirm longer freelancer proposal-submission times and an immediate month-1 drop in client postings."
+  }
+]

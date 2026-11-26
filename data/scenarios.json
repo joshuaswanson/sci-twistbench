@@ -1,0 +1,230 @@
+[
+  {
+    "id": "clin_01",
+    "domain": "Clinical & Biomedical",
+    "title": "The Bimodal Center Efficacy Paradox in a Phase-III Lipid Trial",
+    "dossier": "A multi-center, double-blind, placebo-controlled Phase-III clinical trial (N = 1,840 across 14 academic hospitals) evaluated KVX-402, an oral selective hepatic enzyme inhibitor designed to lower serum LDL cholesterol in patients with refractory hyperlipidemia. Under the prevailing pharmacokinetic paradigm, LDL reduction should scale monotonically with 24-hour steady-state systemic plasma exposure (AUC) of the parent compound, independent of treatment center logistics. Across the pooled cohort, KVX-402 produced only a modest mean LDL reduction of -9.4% relative to placebo (p = 0.04).\n\nPre-specified site-level auditing uncovered a striking bimodal divergence that completely explains the weak pooled effect: at 5 hospitals (Group A, n = 660), KVX-402 achieved a dramatic -34.2% LDL reduction (p < 1e-9), whereas at the other 9 hospitals (Group B, n = 1,180), treated patients exhibited a slight numerical worsening of +4.1% (p = 0.08). Blinded central LC-MS/MS assays verified identical active-ingredient purity, tablet stability, and 24-hour systemic plasma AUC of KVX-402 across all 14 hospitals (mean AUC ratio Group A/B = 1.02, p = 0.71). Baseline patient genetics (APOE and PCSK9 variants), age, BMI, statin background, and standardized 7-day dietary logs were statistically indistinguishable between Group A and Group B (all p > 0.40).\n\nTo test whether unmeasured patient-level confounders drove the split, 64 non-responding patients from Group B hospitals were transferred into a 6-week open-label crossover protocol managed at Group A hospitals using the exact same drug lot numbers; their LDL dropped by a mean of -31.8% (p < 1e-8). Crucially, placebo-arm patients showed virtually zero LDL change in both Group A (-0.3% +/- 1.1%) and Group B (+0.2% +/- 1.2%), ruling out generic hospital care or diet effects.",
+    "prevailing_paradigm": "Drug efficacy is determined solely by steady-state 24-hour systemic plasma exposure (AUC) of the parent compound and patient baseline genetics/diet.",
+    "implicit_assumptions": [
+      "Systemic 24-hour plasma AUC of the parent molecule fully captures pharmacologically active target engagement.",
+      "Time-of-day dosing schedule or fasting/prandial timing relative to circadian hepatic rhythms is irrelevant when 24h AUC is constant.",
+      "Hospital-specific clinical administration workflows (e.g., co-administered routine drugs, meal timing, phlebotomy timing) do not interact with KVX-402.",
+      "The parent drug itself\u2014rather than a site-dependent metabolic/microbiome biotransformation product\u2014is the sole active effector."
+    ],
+    "empirical_constraints": [
+      "E1: Blinded LC-MS/MS confirms identical pill purity and 24-hour systemic plasma AUC of parent KVX-402 across Group A and Group B hospitals (p = 0.71).",
+      "E2: Baseline patient genetics (APOE/PCSK9), age, BMI, statin background, and dietary logs are matched across Group A and Group B (all p > 0.40).",
+      "E3: Transferring 64 Group B non-responders to Group A hospitals using the exact same drug lot numbers restores -31.8% LDL reduction within 6 weeks.",
+      "E4: Placebo arms show zero LDL change in both Group A (-0.3%) and Group B (+0.2%), proving the center factor interacts specifically with KVX-402."
+    ]
+  },
+  {
+    "id": "clin_02",
+    "domain": "Clinical & Biomedical",
+    "title": "The Rapid-Clearance Mortality Inversion in Septic Shock",
+    "dossier": "A stepped-wedge randomized quality-improvement study across 18 intensive care units (N = 6,200 adult patients meeting Sepsis-3 criteria for suspected Gram-negative septic shock) evaluated an aggressive rapid-escalation broad-spectrum beta-lactam infusion protocol that cut median time-to-first-dose from 142 minutes to 28 minutes. Standard critical-care theory holds that bacterial burden drives progressive organ failure, so faster bactericidal clearance should monotonically reduce mortality across all severity strata.\n\nMicrobiologically, the rapid-escalation protocol succeeded overwhelmingly: quantitative blood cultures drawn at 6 hours showed sterile bacterial clearance in 79% of rapid-arm patients versus 41% in standard-care patients (p < 1e-12). Yet 28-day all-cause mortality significantly increased in the rapid-escalation arm, rising from 21.4% to 28.9% (p < 1e-6). Direct drug-toxicity surveillance found no increase in acute kidney injury, hepatotoxicity, or anaphylaxis (p = 0.63), and protocol-locked fluid resuscitation volumes, vasopressor titration thresholds, and mechanical ventilation parameters were identical between arms (all p > 0.50).\n\nStratified analysis revealed a sharp sign reversal across baseline physiological phenotypes: among patients presenting with severe hyperlactatemia (> 4.0 mmol/L), rapid escalation modestly reduced mortality (-3.8 percentage points, p = 0.03). The entire excess mortality (+13.4 percentage points, p < 1e-9) was concentrated in patients who presented with initially low serum lactate (< 2.5 mmol/L) combined with high initial quantitative blood bacterial load (> 10^4 CFU/mL).",
+    "prevailing_paradigm": "In septic shock, maximizing the speed of bactericidal clearance monotonically improves host survival.",
+    "implicit_assumptions": [
+      "Killing circulating bacteria rapidly reduces net host physiological injury rather than precipitating acute secondary harm.",
+      "The host immune/metabolic state at presentation (low vs. high lactate) only reflects disease severity, not a qualitatively different response regime to rapid bacterial lysis.",
+      "Protocol-locked resuscitation parameters imply identical downstream clinical surveillance and management decisions.",
+      "The therapeutic target is purely extracellular pathogen load without protective commensal or counter-regulatory coupling."
+    ],
+    "empirical_constraints": [
+      "E1: 6-hour blood cultures confirm 79% sterile clearance in the rapid arm vs. 41% in the standard arm (ruling out antibiotic resistance or under-dosing).",
+      "E2: Direct antibiotic organ toxicities (nephrotoxicity, hepatotoxicity, anaphylaxis) did not differ between arms (p = 0.63).",
+      "E3: Excess mortality (+13.4 percentage points) occurred exclusively in low-lactate (<2.5 mmol/L), high-bacterial-load patients, whereas high-lactate (>4.0 mmol/L) patients benefited (-3.8 percentage points).",
+      "E4: Fluid resuscitation volumes, vasopressor thresholds, and ventilator parameters were protocol-locked and identical between arms (p > 0.50)."
+    ]
+  },
+  {
+    "id": "clin_03",
+    "domain": "Clinical & Biomedical",
+    "title": "The Non-Monotonic Motor Recovery Trough After Focal Stroke",
+    "dossier": "A prospective longitudinal neurorehabilitation study (N = 410 first-time unilateral middle cerebral artery ischemic stroke patients, independently replicated in a second cohort of N = 230) quantified upper-limb motor recovery using the Fugl-Meyer Assessment (FMA-UE, 0-66 scale) over 12 months alongside baseline diffusion tensor imaging (DTI) of the ipsilesional corticospinal tract (CST). Under standard proportional-recovery models, motor improvement should decrease monotonically with structural CST damage and scale positively with rehabilitation dose.\n\nInstead, recovery exhibited a deep, reproducible non-monotonic trough at intermediate structural damage. Patients with mild CST loss (< 20% tract disruption) recovered near-completely (mean +38.4 FMA points). Surprisingly, patients with intermediate CST loss (35-55% tract disruption) recovered far worse (mean +11.2 points) than patients with severe CST loss (75-90% tract disruption), who achieved a mean gain of +27.8 points (p < 1e-7 comparing severe vs. intermediate). High-resolution DTI confirmed strictly monotonic structural white-matter loss with zero hidden CST sparing in the 75-90% group.\n\nTotal physiotherapy hours, therapist blinding, robotic-assistance exposure, and concurrent pharmacotherapy were tightly matched across all damage strata (p = 0.58). Task-based fMRI at 6 months revealed a qualitative neural divergence: intermediate-damage patients (35-55%) exhibited persistent, elevated activation of ipsilesional primary motor cortex (M1), whereas severe-damage patients (75-90%) suppressed ipsilesional M1 and strongly recruited contralesional premotor and brainstem reticulospinal networks.",
+    "prevailing_paradigm": "Residual ipsilesional corticospinal tract integrity is monotonically beneficial for post-stroke motor recovery.",
+    "implicit_assumptions": [
+      "Preserved structural fibers in a damaged pathway always contribute net positive signal rather than interfering or blocking alternative neural pathways.",
+      "Motor rehabilitation engages a single continuous recovery mechanism rather than competing discrete neural/behavioral attractors.",
+      "The Fugl-Meyer score measures a single biological recovery process rather than conflating restitution and gross compensatory strategies.",
+      "Enrolled rehab cohorts across lesion severity strata are free of differential survival or premorbid reserve selection."
+    ],
+    "empirical_constraints": [
+      "E1: High-resolution DTI verifies strictly monotonic structural CST white-matter loss across <20%, 35-55%, and 75-90% strata with no hidden CST sparing.",
+      "E2: Physiotherapy hours, therapist blinding, robotic therapy, and medications are statistically matched across strata (p = 0.58).",
+      "E3: Mild damage (<20%) recovers near-completely (+38.4), intermediate (35-55%) hits a deep trough (+11.2), and severe (75-90%) rebounds strongly (+27.8).",
+      "E4: 6-month fMRI shows persistent ipsilesional M1 activation in the 35-55% group versus contralesional premotor/reticulospinal recruitment in the 75-90% group."
+    ]
+  },
+  {
+    "id": "phys_01",
+    "domain": "Physics & Materials",
+    "title": "Thickness-Inverted Thermal Conductivity in Epitaxial Oxide Thin Films",
+    "dossier": "A materials physics collaboration measured the cross-plane and in-plane thermal conductivity (kappa_eff) of epitaxial layered perovskite-oxide thin films (Sr2TiO4 grown on single-crystal MgO substrates) across thicknesses d ranging from 20 nm to 800 nm at 300 K using time-domain thermoreflectance (TDTR). Standard kinetic theory of dielectric solids predicts that phonon-boundary scattering should reduce kappa_eff monotonically below the bulk single-crystal value (5.6 W/m*K) as film thickness decreases into the Casimir regime.\n\nWhile films between 200 nm and 800 nm behaved normally (kappa_eff dropping from 5.3 to 4.4 W/m*K), films thinner than 120 nm exhibited a dramatic inversion: at d = 35 nm, kappa_eff surged to 18.4 W/m*K, more than triple the bulk single-crystal limit. Cross-sectional STEM and X-ray diffraction confirmed exact stoichiometry, single-phase crystallinity, and electrical resistivity exceeding 10^11 Ohm*cm at all thicknesses, ruling out metallic inclusions or electronic heat conduction. Independent contact 3-omega electrical thermometry reproduced the 18.4 W/m*K value within 4%, ruling out optical penetration-depth artifacts specific to TDTR.\n\nSubstrate-exchange experiments isolated a sharp boundary condition: growing the identical 35 nm Sr2TiO4 film on compressive LaAlO3 eliminated the enhancement (kappa_eff = 4.1 W/m*K), and mechanically exfoliating and transferring the 35 nm film off MgO onto amorphous SiO2 caused kappa_eff to collapse immediately from 18.4 to 4.3 W/m*K. Moreover, when the intact 35 nm film on MgO was cooled to 80 K, the anomalous enhancement vanished completely and kappa_eff reverted to normal Casimir scaling.",
+    "prevailing_paradigm": "In insulating crystalline thin films, reducing thickness increases diffuse boundary scattering and strictly lowers thermal conductivity below the bulk crystal limit.",
+    "implicit_assumptions": [
+      "Heat transport in the dielectric thin film occurs purely via incoherent diffusive bulk-like phonons independent of interfacial strain or electromagnetic coupling.",
+      "The MgO substrate acts as a passive mechanical support whose thermal and lattice properties remain decoupled from the film's effective conductivity.",
+      "Anharmonic phonon-phonon scattering rates are fixed intrinsic material constants unaffected by coherent epitaxial strain.",
+      "Standard 1D thermal inversion models correctly partition heat flux between the ultrathin film and the near-surface substrate region."
+    ],
+    "empirical_constraints": [
+      "E1: STEM/XRD confirm pure stoichiometry and electrical resistivity > 10^11 Ohm*cm at all thicknesses, ruling out electronic conduction or metallic phases.",
+      "E2: Both optical TDTR and contact 3-omega thermometry agree within 4%, ruling out TDTR optical transparency artifacts.",
+      "E3: The 35 nm enhancement (18.4 W/m*K) occurs on tensile MgO, vanishes on compressive LaAlO3 (4.1 W/m*K), and vanishes immediately when exfoliated off MgO onto SiO2 (4.3 W/m*K).",
+      "E4: Cooling the intact 35 nm film on MgO to 80 K completely eliminates the enhancement, restoring normal Casimir scaling."
+    ]
+  },
+  {
+    "id": "phys_02",
+    "domain": "Physics & Materials",
+    "title": "The Phase-Shifted Annual Drift Between Distant Optical Lattice Clocks",
+    "dossier": "Over 24 consecutive months, two metrology institutes continuously compared two identically constructed 87Sr optical lattice clocks linked via a 420 km phase-stabilized optical fiber: Clock A located in a coastal sea-level laboratory and Clock B located in an alpine laboratory at 1,450 m elevation. After correcting for static orthometric gravitational redshift (Delta_nu/nu = g*Delta_h/c^2), solid-Earth tides, Zeeman shifts, and blackbody radiation, standard general-relativistic metrology predicts a stationary fractional frequency ratio stable within 2e-18.\n\nInstead, the fully corrected ratio nu_B / nu_A exhibited a smooth, reproducible annual oscillation with peak-to-peak amplitude 4.8e-17 (24 sigma), peaking every year in late April and reaching its minimum in late October\u2014roughly 60 days out of phase with both local ambient air temperature extremes and Earth's orbital perihelion/aphelion. Bidirectional Doppler-cancellation diagnostics verified that optical-fiber link non-reciprocity remained below 1.5e-18 year-round, and laboratory HVAC held both vacuum chambers within +/- 0.05 K (bounding blackbody shifts below 2e-18).\n\nTwo auxiliary instruments sharply constrained the anomaly. First, a portable 171Yb+ optical ion clock co-located at Alpine Lab B and measured locally against 87Sr Clock B showed zero annual drift (< 3e-18), ruling out any Sr-specific atomic systematic or species-dependent drift in fundamental constants. Second, a continuous superconducting gravimeter co-located at Alpine Lab B recorded a seasonal vertical gravity variation of only 40 nm/s^2\u2014more than 50 times too small to account for a 4.8e-17 frequency shift under a standard local point-mass free-air height conversion.",
+    "prevailing_paradigm": "Static geodetic elevation plus local gravimeter monitoring suffices to remove environmental gravitational redshift variations between distant optical clocks.",
+    "implicit_assumptions": [
+      "Local vertical gravity acceleration g(t) measured at a single site reliably proxies gravitational potential Phi(t) across regional mass redistributions.",
+      "Seasonal mass changes at coastal Lab A (which lacks a reported gravimeter) are negligible compared to alpine Lab B.",
+      "Relativistic frame transformations (Sagnac, polar motion, geoid reference surface) over a 420 km fiber link are static or fully captured by standard tide models.",
+      "The gravitational potential shift can only arise from vertical geometric uplift/subsidence rather than extended regional mass loading."
+    ],
+    "empirical_constraints": [
+      "E1: A co-located 171Yb+ ion clock vs. 87Sr Clock B at Lab B shows zero annual shift (< 3e-18), ruling out Sr-specific systematics or alpha-variation.",
+      "E2: Bidirectional fiber-link diagnostics bound optical link non-reciprocity below 1.5e-18 year-round.",
+      "E3: Chamber temperature is stabilized to +/- 0.05 K, bounding blackbody radiation shifts below 2e-18, and the 4.8e-17 cycle peaks in late April / troughs in late October (60 days off solar/temperature extrema).",
+      "E4: A co-located superconducting gravimeter at Lab B measures only 40 nm/s^2 seasonal gravity change, 50x smaller than expected from a local point-mass height-change model."
+    ]
+  },
+  {
+    "id": "phys_03",
+    "domain": "Physics & Materials",
+    "title": "Voltage-Selective Capacity Gain Under Open-Circuit Rest in Solid-State Batteries",
+    "dossier": "An electrochemical aging study cycled 240 solid-state lithium-metal coin cells (NCM811 cathode, LLZO garnet solid electrolyte, Li-metal anode) at a constant 1C rate between fixed terminal voltage cutoffs of 3.0 V and 4.3 V. Under standard battery degradation theory, discharge capacity declines monotonically with cumulative charge throughput and calendar time; inserting open-circuit rest periods should only allow slow parasitic calendar fade.\n\nUnexpectedly, cells subjected to a 12-hour open-circuit rest held at precisely 3.72 V every 25 cycles exhibited a steady capacity *increase*, delivering 114% of their own initial cycle-1 discharge capacity at cycle 500 (and 112% nominal capacity), while continuously cycled control cells faded to 78% (p < 1e-10). High-precision coulombic efficiency exceeded 99.94% per cycle, and post-mortem ICP-OES elemental analysis verified that total lithium inventory inside the hermetically sealed cells was strictly conserved.\n\nControl protocols ruled out generic resting effects: inserting identical 12-hour rests at 4.25 V (fully charged) or 3.10 V (discharged) accelerated degradation (71% and 76% retention at cycle 500, respectively). During the 3.72 V rest, isothermal micro-calorimetry detected a small, reproducible endothermic heat absorption accompanied by a slow +18 mV open-circuit voltage relaxation. Operando X-ray tomography found no dendrites or macroscopic void collapse, whereas electrochemical impedance spectroscopy (EIS) revealed a 62% drop in interfacial charge-transfer resistance exclusively in the 3.72 V-rested cells.",
+    "prevailing_paradigm": "Cycle-1 capacity represents the ceiling of accessible reversible lithium, and open-circuit resting can only cause monotonic calendar degradation.",
+    "implicit_assumptions": [
+      "Cycle-1 measured capacity at 1C between 3.0 V and 4.3 V equals the true thermodynamic lithium inventory rather than a kinetically truncated fraction.",
+      "Interfacial resistance and microstructural strain states degrade irreversibly rather than undergoing voltage-specific annealing or phase equilibration.",
+      "Fixed terminal voltage cutoffs (3.0-4.3 V) correspond to identical internal state-of-charge windows regardless of interfacial overpotential.",
+      "Open-circuit rest at intermediate chemical potential is thermodynamically inert rather than driving endothermic structural reordering."
+    ],
+    "empirical_constraints": [
+      "E1: Coulombic efficiency exceeds 99.94% and post-mortem ICP-OES confirms strictly conserved total lithium inventory (no external lithium source).",
+      "E2: Identical 12-hour rests at 4.25 V (71%) or 3.10 V (76%) worsen degradation, proving the capacity gain is sharply specific to resting at 3.72 V.",
+      "E3: Isothermal calorimetry during the 3.72 V rest shows a reproducible endothermic heat signature and +18 mV OCV relaxation.",
+      "E4: Operando X-ray tomography rules out dendrites/macro-void collapse, while EIS shows a 62% drop in interfacial charge-transfer resistance exclusively in 3.72 V-rested cells."
+    ]
+  },
+  {
+    "id": "ecol_01",
+    "domain": "Ecology & Earth Systems",
+    "title": "Predator-Exclusion Collapse of Herbivore Biomass in Coastal Kelp Reefs",
+    "dossier": "A 5-year controlled marine-ecology field experiment across 36 coastal rocky-reef plots (500 m^2 each) tested classic top-down trophic cascade theory by excluding apex predatory crabs and wrasses using large-mesh cages to allow herbivorous purple sea urchins to proliferate. Standard trophic theory predicts that predator removal should sharply increase urchin biomass and intensify grazing until kelp forests collapse into urchin barrens.\n\nDuring months 1 through 4, exclusion plots followed textbook predictions: juvenile urchin settlement and density reached 2.1 times that of unfenced controls (p < 1e-5). Beginning in month 7, however, urchin populations inside exclusion plots crashed catastrophically; by month 18, total urchin biomass in predator-exclusion plots was 68% *lower* than in control plots (p < 1e-8), and canopy kelp cover expanded by +41% relative to controls\u2014the exact inverse of a standard trophic cascade.\n\nContinuous underwater video and cage-integrity inspections confirmed zero apex predator intrusion or human harvesting, and in-situ loggers recorded identical water temperature, dissolved oxygen, salinity, and dissolved inorganic nitrogen fluxes across exclusion and control plots (all p > 0.65). Crucially, dead urchin tests collected during the months 7-14 die-off exhibited completely intact spines with zero mechanical bite marks, while surviving urchins in exclusion plots displayed severely elevated cellular heat-shock/metabolic stress markers and 55% smaller gonad indices despite abundant standing kelp.",
+    "prevailing_paradigm": "Removing apex predators strictly releases herbivore populations from mortality control, increasing herbivore biomass and decreasing primary producer (kelp) cover.",
+    "implicit_assumptions": [
+      "Predators act solely as a negative mortality sink on prey rather than performing stabilizing roles (e.g., culling diseased individuals or regulating prey aggregation).",
+      "Standing kelp biomass is uniformly palatable and nutritionally constant regardless of early grazing intensity.",
+      "Exclusion cages that block apex predators leave all smaller cryptic trophic levels and microbial interactions unchanged.",
+      "Herbivore foraging behavior and spatial density distribution remain invariant in the absence of predation risk cues."
+    ],
+    "empirical_constraints": [
+      "E1: Verified mesh integrity and underwater video confirm zero apex predator intrusion or human poaching.",
+      "E2: Continuous loggers verify identical temperature, dissolved oxygen, salinity, and nutrient influx between exclusion and control plots (all p > 0.65).",
+      "E3: Juvenile urchin settlement surged 2.1x during months 1-4 before the sudden crash began in month 7, culminating in -68% biomass and +41% kelp cover.",
+      "E4: Dead urchin tests had intact spines with zero bite marks, while surviving exclusion-plot urchins showed high metabolic stress and stunted gonads despite abundant standing kelp."
+    ]
+  },
+  {
+    "id": "ecol_02",
+    "domain": "Ecology & Earth Systems",
+    "title": "Boreal Carbon-Sink Surge Amid Severe Multi-Year Drought",
+    "dossier": "A 15-year eddy-covariance flux-tower network spanning 12 mature black-spruce sites in the Canadian boreal forest continuously monitored net ecosystem CO2 exchange (NEE). Under standard terrestrial carbon-cycle models, severe multi-year drought induces stomatal closure, reduces gross primary productivity (GPP), elevates thermal respiration stress, and weakens or reverses the boreal carbon sink into a net carbon source.\n\nDuring an unprecedented 3-year regional drought (cumulative precipitation -44%, root-zone soil moisture -2.8 sigma), 9 of the 12 towers recorded a striking +38% *increase* in net annual carbon uptake (p < 1e-5). This occurred even though independent dendrochronology (tree-ring cores), litterfall traps, and satellite NDVI all confirmed that aboveground woody growth and canopy greenness declined by 18-25% across the exact same 9 sites. Every tower passed independent sonic-anemometer calibrations, closed-path infrared gas analyzer zero/span checks, and energy-balance closure audits (> 86%).\n\nAncillary measurements highlighted a sharp geological split: the 9 surge sites were all underlain by deep, thick organic peat and feather-moss layers, where automated soil-chamber assays recorded a 61% collapse in heterotrophic soil respiration (R_h) while daytime canopy GPP fell by only 14% and nighttime eddy-covariance respiration dropped sharply. In contrast, the remaining 3 sites sat on well-drained upland mineral soils and showed the textbook drought response: a -29% decline in net carbon uptake.",
+    "prevailing_paradigm": "Severe drought reduces net ecosystem carbon uptake in boreal forests in proportion to declines in canopy greenness and aboveground tree growth.",
+    "implicit_assumptions": [
+      "Net ecosystem carbon balance (NEE = GPP - R_eco) is dominated by drought sensitivity of photosynthesis rather than asymmetric sensitivity of microbial decomposition.",
+      "Aboveground woody increments and NDVI capture total ecosystem carbon allocation, ignoring belowground root/mycorrhizal shifts.",
+      "Vertical eddy-covariance tower measurements over dry, porous organic peat accurately close the 3D ecosystem carbon budget without lateral subterranean CO2 drainage.",
+      "Organic peat and upland mineral soils respond along the same monotonic moisture-respiration curve."
+    ],
+    "empirical_constraints": [
+      "E1: All 12 towers passed anemometer calibration, IRGA zero/span checks, and energy-balance closure audits (>86%), ruling out sensor drift.",
+      "E2: Tree rings, litterfall traps, and satellite NDVI confirm aboveground growth and canopy greenness fell 18-25% at the 9 surge sites.",
+      "E3: The +38% NEE sink surge occurred exclusively at the 9 deep organic-peat sites (where soil-chamber R_h plunged 61%), whereas the 3 mineral-soil sites declined by -29%.",
+      "E4: Nighttime eddy-covariance respiration dropped sharply at the 9 peat sites while daytime GPP fell by only 14%."
+    ]
+  },
+  {
+    "id": "ecol_03",
+    "domain": "Ecology & Earth Systems",
+    "title": "Daytime Urban Heat-Island Cooling Inversion During Extreme Heatwaves",
+    "dossier": "A 10-summer urban climate study deployed 180 aspirated meteorological stations paired with Landsat thermal-infrared retrievals across 6 semi-arid metropolitan basins to quantify the urban-rural temperature differential (Delta_T = T_urban - T_rural). Classic urban climatology holds that impervious asphalt/concrete surfaces, reduced vegetation, and anthropogenic waste heat cause cities to stay warmer than surrounding rural land, with heatwaves amplifying urban heat island (UHI) intensity.\n\nUnder moderate summer warmth (background rural highs of 30-36 C), all 6 cities exhibited the textbook positive daytime UHI of +3.1 C. However, whenever synoptic extreme heatwaves pushed rural temperatures above 41 C, the daytime differential sharply inverted: urban cores became 2.4 C to 3.8 C *cooler* than surrounding rural scrubland (p < 1e-9). Both 2-meter aspirated air thermometers and satellite land-surface temperature retrievals captured the daytime inversion, ruling out radiation-shielding artifacts.\n\nSpatial and diurnal breakdowns imposed tight physical constraints. On the exact same >41 C heatwave days, the inversion reversed completely after sunset, with urban cores remaining +4.2 C warmer than rural stations overnight. Furthermore, the daytime cooling inversion was strongest in dense high-rise downtown cores (-3.8 C) and irrigated suburban residential tracts (-2.9 C), completely absent in flat unshaded industrial parking districts (+0.4 C), and occurred under synoptic conditions with uniform wind speed, cloud cover, and regional humidity across urban and rural stations (all p > 0.50).",
+    "prevailing_paradigm": "Urban impervious surfaces and anthropogenic heat monotonically amplify daytime urban warmth relative to rural surroundings during extreme heatwaves.",
+    "implicit_assumptions": [
+      "Rural semi-arid landscapes maintain higher evaporative cooling than urban areas across all temperature regimes.",
+      "Urban surface geometry (3D canyon height) acts purely as a heat trap rather than shifting the diurnal phase of peak radiative absorption.",
+      "The urban-rural differential is driven primarily by static land-cover albedo rather than nonlinear physiological thresholds (stomatal shutdown) or human water/irrigation responses.",
+      "Urban boundary-layer depth and vertical heat-rejection geometry map uniformly onto 2-meter street-level temperatures."
+    ],
+    "empirical_constraints": [
+      "E1: Both 2m aspirated air thermometers and satellite skin-temperature retrievals confirm the -2.4 to -3.8 C daytime inversion above 41 C.",
+      "E2: On the exact same >41 C heatwave days, nighttime UHI flips back to strongly positive (+4.2 C warmer in urban cores).",
+      "E3: Daytime cooling is strongest in dense high-rise cores (-3.8 C) and irrigated suburbs (-2.9 C), but absent in flat open industrial parking districts (+0.4 C).",
+      "E4: Synoptic wind speed, cloud cover, and background humidity are statistically uniform across urban and rural stations (p > 0.50)."
+    ]
+  },
+  {
+    "id": "econ_01",
+    "domain": "Economics & Behavioral",
+    "title": "Market Contraction Under Algorithmic Price Transparency",
+    "dossier": "An online skilled-freelance labor marketplace ran a 6-month cluster-randomized experiment across 24 non-overlapping skill categories (N = 48,000 active freelancers; N = 190,000 client job postings). In 12 treatment categories, the platform deployed an AI market-rate estimator that displayed the predicted median winning bid to both clients and freelancers prior to proposal submission. Standard search-and-matching economics predicts that reducing price uncertainty should narrow bid dispersion, speed up bargaining, and increase total matched transaction volume.\n\nBid dispersion indeed tightened by 47% in treatment categories, and freelancer time-to-submit proposals fell by 38%, ruling out interface friction or cognitive overload. Yet total completed match rates *collapsed* by 19.3% relative to untreated control categories (p < 1e-12), average winning bids *rose* by 11.8%, and top-decile freelancers (ranked by historical client ratings and repeat hires) exited the platform at 3.2 times the control attrition rate. Control categories remained completely flat throughout the 6 months, ruling out cross-market spillovers or macro shocks.\n\nSubgroup decomposition revealed a stark task-structure interaction: client posting volume and stated budgets did not drop during months 1-2 (p = 0.44), yet the match-rate decline began immediately in week 2. Crucially, the collapse was concentrated almost entirely in complex, high-variance custom projects (-31.4% match rate), whereas standardized, commoditized tasks experienced a modest *increase* in match volume (+4.2%, p = 0.01).",
+    "prevailing_paradigm": "Providing accurate public price benchmarks reduces market friction and monotonically increases transaction efficiency and match volume.",
+    "implicit_assumptions": [
+      "Bid prices convey only cost information rather than serving as an endogenous quality-signaling mechanism for heterogeneous talent.",
+      "Public median benchmarks act as neutral statistical summaries rather than psychological fairness anchors or tacit collusive price floors.",
+      "The AI estimator trained on completed transactions provides an unbiased reference price for complex, heterogeneous projects.",
+      "Lowering dispersion benefits both standardized and vertically differentiated high-skill submarkets symmetrically."
+    ],
+    "empirical_constraints": [
+      "E1: Cluster randomization across 24 non-overlapping categories confirms zero cross-market spillover; control match rates stayed flat.",
+      "E2: Client posting volume and stated budgets did not decline in months 1-2 (p = 0.44), yet match rates dropped immediately starting in week 2.",
+      "E3: Match collapse occurred almost exclusively on complex, high-variance projects (-31.4%), while standardized tasks increased (+4.2%), accompanied by +11.8% winning bids and 3.2x top-decile freelancer exit.",
+      "E4: Bid dispersion fell 47% and freelancer bid-submission time dropped 38%, ruling out interface friction or cognitive overload."
+    ]
+  },
+  {
+    "id": "econ_02",
+    "domain": "Economics & Behavioral",
+    "title": "Incentivized Accuracy Collapse on Subtle Errors in Scientific Auditing",
+    "dossier": "A randomized field experiment recruited N = 1,200 trained STEM crowd auditors to evaluate 36,000 quantitative scientific claims for methodological validity. Half were assigned to a flat hourly wage, while half were assigned to a strictly proper accuracy-bonus scheme paying 3x base rate when their binary verdict ('Valid' vs. 'Flawed') matched a blinded gold-standard panel of domain experts audited on a random 15% subset. Standard principal-agent theory holds that incentivizing agreement with an accurate ground-truth audit increases cognitive effort and improves error detection across all difficulty tiers.\n\nPre-treatment calibration verified identical baseline auditing skill between arms (p = 0.81). Under the bonus scheme, auditors spent 27% *more* time per claim and wrote 34% longer written justifications, ruling out rushed clicking or bots. On straightforward consensus-clear items, accuracy rose from 84% to 93% (p < 1e-8). However, on claims containing subtle but genuine statistical errors (e.g., hidden collider bias or misapplied multiple-testing corrections wrapped in polished prose), bonus-arm accuracy *collapsed* from 71% to 43% (p < 1e-11)\u2014substantially worse than flat-pay controls and below 50% chance.\n\nError-direction analysis showed the collapse was not random noise: on subtle-error items, bonus auditors shifted overwhelmingly toward falsely certifying flawed claims as 'Valid' (false-negative rate surged from 24% to 54%), while false-positive rates on genuinely valid claims actually declined slightly. The blinded expert panel's ground truth was identical for both arms, and auditors had zero access to panelist identities or historical panel verdicts.",
+    "prevailing_paradigm": "Paying auditors a strictly proper bonus for matching an accurate expert ground truth aligns incentives with independent truth-seeking and improves detection of subtle errors.",
+    "implicit_assumptions": [
+      "Auditors rewarded for matching an expert panel maximize their own first-order belief about ground truth rather than second-order beliefs about what an average panelist will certify.",
+      "Longer time-on-task and longer justifications reflect deeper mathematical verification rather than surface-credibility search or rationalizing a safe default.",
+      "Auditors perform the task purely with internal human cognition rather than outsourcing judgment to external heuristic or automated tools whose failure modes correlate with polished prose.",
+      "Incentives do not alter subjective decision thresholds under perceived asymmetric base rates or burden-of-proof norms."
+    ],
+    "empirical_constraints": [
+      "E1: Randomized assignment and pre-treatment calibration confirm identical baseline skill across flat-pay and bonus arms (p = 0.81).",
+      "E2: Bonus auditors spent 27% more time per claim and wrote 34% longer justifications, ruling out rushing, laziness, or bots.",
+      "E3: Bonus accuracy rose on clear items (84% -> 93%) but collapsed on subtle statistical errors (71% -> 43%) via a directional surge in certifying flawed claims as 'Valid' (false-negative rate 24% -> 54%).",
+      "E4: Expert panel ground truth was blinded and identical across arms, with zero auditor access to panelist identities or past labels."
+    ]
+  },
+  {
+    "id": "econ_03",
+    "domain": "Economics & Behavioral",
+    "title": "The Commute-Duration Expansion Following Automated Express Rail Launch",
+    "dossier": "A 3-year metropolitan mobility study tracked a fixed longitudinal panel of N = 85,000 urban commuters via anonymized smartphone GPS telemetry before and after the launch of a 6-line automated express rail network engineered to cut point-to-point transit travel times by 45%. Standard urban transport models predict that dramatically faster rail service should shift commuters out of cars, relieve arterial highway congestion, and substantially reduce average door-to-door commute durations.\n\nOperational metrics met every engineering target: trains maintained 99.2% on-time reliability at 45% faster station-to-station speeds, rail mode share surged from 14% to 39%, arterial vehicle-kilometers fell 18%, and average highway driving speeds *increased* by 16% (ruling out Braess's paradox or induced highway gridlock). Yet by month 24, mean door-to-door commute duration across the exact same tracked commuter panel had *increased* by 11.4 minutes (+29%, p < 1e-15). Even more puzzlingly, among panel members who personally switched from private car to the faster express rail, 42% experienced *longer* total door-to-door commutes at month 24 than they had by car before launch.\n\nHigh-frequency temporal tracking exposed a sharp dynamic trajectory: during the first 3 months immediately following the rail opening, mean door-to-door commute time *dropped* by 7.8 minutes exactly as predicted. Between months 6 and 24, however, mean commute times climbed steadily past the pre-launch baseline, even though the panel composition remained strictly fixed (excluding newly arriving metropolitan immigrants).",
+    "prevailing_paradigm": "Faster point-to-point transit infrastructure reduces door-to-door commute durations for existing urban residents when highway congestion simultaneously eases.",
+    "implicit_assumptions": [
+      "Origin-destination pairs (home and workplace locations) of existing commuters remain static after a major drop in per-kilometer travel cost.",
+      "Point-to-point station speed dominates total door-to-door travel time, ignoring dynamic saturation of first-mile/last-mile feeders, transfers, or departure-time clustering.",
+      "Commuters minimize travel time rather than holding a roughly fixed travel-time budget and trading speed gains for housing/wage gains.",
+      "Trip structure (single-purpose commute vs. multi-stop errand chaining) remains unchanged when switching from private cars to hub-and-spoke rail."
+    ],
+    "empirical_constraints": [
+      "E1: Express trains achieved 99.2% reliability and 45% faster station-to-station speeds; rail mode share rose from 14% to 39%.",
+      "E2: Arterial vehicle-km fell 18% and average highway speeds increased 16%, ruling out induced highway gridlock or Braess's paradox.",
+      "E3: Telemetry tracks the exact same fixed cohort of 85,000 commuters over 3 years (ruling out demographic inflow of distant newcomers), yet 42% of car-to-rail switchers had longer commutes at month 24.",
+      "E4: Mean commute duration initially dropped -7.8 minutes in months 1-3 before climbing steadily to +11.4 minutes above baseline between months 6 and 24."
+    ]
+  }
+]

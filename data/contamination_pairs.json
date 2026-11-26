@@ -1,0 +1,130 @@
+[
+  {
+    "pair_id": "contam_01",
+    "concept": "Infectious etiology behind sterile-environment chemical damage (H. pylori / peptic ulcer)",
+    "orig": {
+      "id": "contam_01_orig",
+      "variant": "historical_original",
+      "domain": "Contamination Control",
+      "title": "Chronic Peptic Ulcer Relapse After Acid Suppression",
+      "dossier": "For decades, gastroenterology held that chronic peptic ulcers were caused purely by excess gastric acid, stress, and mucosal barrier breakdown, because the highly acidic stomach lumen (pH 1.5-2.0) was assumed to be a sterile environment hostile to microbial colonization. Potent H2-receptor antagonists reliably suppressed gastric acid secretion and healed over 85% of duodenal ulcers on endoscopy within 8 weeks.\n\nHowever, longitudinal follow-up across multiple hospital cohorts revealed a striking paradox: within 12 months of stopping acid-suppressing drugs, over 75% of patients suffered complete ulcer relapse, even when lifestyle, diet, and psychological stress markers remained stable. By contrast, a small clinic testing an older bismuth subcitrate regimen combined with short-course metronidazole achieved similar initial healing but recorded a 12-month relapse rate below 15%, despite far weaker acid suppression.\n\nHistological biopsies of ulcer margins routinely noted curved, spiral structures beneath the gastric mucus layer, which standard pathology dismissed as incidental post-biopsy contaminants or inert debris because conventional 48-hour aerobic plate cultures grew nothing.",
+      "empirical_constraints": [
+        "E1: Acid-suppressing H2 blockers heal >85% of ulcers acutely yet >75% relapse within 12 months after cessation.",
+        "E2: Bismuth + metronidazole suppresses acid far less yet cuts 12-month relapse below 15%.",
+        "E3: Stomach lumen pH is 1.5-2.0 and standard 48-hour aerobic cultures fail to grow organisms.",
+        "E4: Biopsies repeatedly show curved spiral structures beneath the mucus layer at ulcer margins."
+      ],
+      "canonical_mechanism": "Slow-growing acid-tolerant mucosal bacterium (H. pylori) surviving under the mucus layer causes chronic ulcer relapse."
+    },
+    "iso": {
+      "id": "contam_01_iso",
+      "variant": "isomorphic_transfer",
+      "domain": "Contamination Control",
+      "title": "Recurrent Calcification Pitting in High-Salinity Desalination Membranes",
+      "dossier": "In industrial brine-concentration engineering, recurrent pitting corrosion of polyamide reverse-osmosis membranes operating in hyper-saline, high-chlorine feedwater (salinity 180 g/L, free chlorine 4.5 ppm) has long been attributed strictly to chemical oxidative stress and mechanical pressure cycling, because the extreme osmotic and oxidizing brine stream is considered completely abiotic. Dosing chemical anti-oxidant neutralizers halts active pit growth and restores 88% of baseline flux recovery within 6 weeks.\n\nYet plant-level longitudinal audits uncovered a sharp anomaly: within 9 months of returning membranes to normal operating buffer, 78% of chemically restored modules suffered rapid recurrence of deep pitting at identical membrane zones despite stable pressure and feed chemistry. Conversely, an experimental facility flushing modules briefly with a weak non-oxidizing copper-thiazole biocide achieved slower initial flux restoration but slashed 9-month pitting recurrence below 14%, despite providing zero chemical antioxidant protection.\n\nScanning electron microscopy of pit floors consistently revealed filamentous micro-nodules nestled beneath the polysaccharide-like scaling boundary layer, which engineers routinely dismissed as precipitated gypsum crystals because standard 48-hour freshwater nutrient-agar assays yielded zero colony growth.",
+      "empirical_constraints": [
+        "E1: Chemical antioxidant neutralizers restore 88% flux acutely yet 78% of modules suffer rapid pit recurrence within 9 months.",
+        "E2: Brief copper-thiazole biocide flushing provides zero antioxidant protection yet cuts 9-month recurrence below 14%.",
+        "E3: Bulk brine is 180 g/L salinity with 4.5 ppm chlorine, and standard 48-hour freshwater agar assays show zero growth.",
+        "E4: SEM consistently reveals filamentous micro-nodules sheltered beneath the scaling boundary layer on pit floors."
+      ],
+      "canonical_mechanism": "Slow-growing extremophilic halotolerant/chlorine-tolerant biofilm microbe sheltered beneath the scale layer drives recurrent pitting."
+    }
+  },
+  {
+    "pair_id": "contam_02",
+    "concept": "Vector cross-contamination from upstream lab transfer (Semmelweis / childbed fever)",
+    "orig": {
+      "id": "contam_02_orig",
+      "variant": "historical_original",
+      "domain": "Contamination Control",
+      "title": "Asymmetric Mortality Between Adjacent Maternity Wards",
+      "dossier": "At a major 19th-century European teaching hospital, two adjacent maternity clinics admitted expectant mothers on alternating days from the exact same urban catchment population. Under the prevailing miasma and atmospheric-influence paradigm, puerperal (childbed) fever arose from invisible environmental vapors, overcrowding, or maternal fear, and should affect adjacent clinics in the same building identically.\n\nHospital registries over 6 consecutive years revealed a stark, persistent 5-fold mortality gap: Clinic 1 (staffed by physicians and medical students) averaged 10.4% maternal mortality, whereas Clinic 2 (staffed solely by midwives) averaged 2.1% (p < 1e-20). Controlling for ventilation, laundry suppliers, overcrowding (Clinic 2 was actually more crowded), birthing position, and even street-birth admissions (women who gave birth in the alley en route to Clinic 1 rarely contracted fever) failed to close the gap.\n\nRoutine workflow audits noted one procedural difference: Clinic 1 physicians and students began each morning conducting autopsies before walking directly to the delivery ward, rinsing only briefly with plain soap and water. When Clinic 1 mandated scrubbing hands and instruments in a chlorinated lime solution between rooms, its mortality plummeted to 1.9% within two months\u2014matching Clinic 2.",
+      "empirical_constraints": [
+        "E1: Clinics 1 and 2 sit in the same building admitting alternating-day patients from identical demographics, yet mortality is 10.4% vs 2.1%.",
+        "E2: Ventilation, laundry, birthing position, and overcrowding (Clinic 2 is more crowded) fail to explain the gap, and street births avoid fever.",
+        "E3: Clinic 1 staff perform morning autopsies before deliveries using only plain soap/water rinses.",
+        "E4: Mandating chlorinated lime hand/instrument scrubbing in Clinic 1 drops mortality from 10.4% to 1.9% within 2 months."
+      ],
+      "canonical_mechanism": "Direct contact transfer of infectious cadaveric/microbial agent on physicians' hands/instruments from autopsy room to patients."
+    },
+    "iso": {
+      "id": "contam_02_iso",
+      "variant": "isomorphic_transfer",
+      "domain": "Contamination Control",
+      "title": "Asymmetric Defect Rates Between Identical Semiconductor Wafer Lines",
+      "dossier": "Inside a single ISO-Class-3 semiconductor fabrication cleanroom, two parallel lithography bays (Bay Alpha and Bay Beta) processed silicon wafers from the exact same ingot batches on alternating shifts using identical stepper optics and photoresist stocks. Under standard fab yield-engineering models, sub-micron dielectric breakdown defects arise from ambient HEPA airflow particulates, wafer-substrate impurities, or tool vibration, and must occur symmetrically across co-located bays.\n\nSixteen months of fab telemetry exposed an unexplained 5-fold yield failure gap: Bay Alpha (operated by senior process engineers) suffered a 9.8% wafer scrap rate, whereas Bay Beta (operated by dedicated production technicians) averaged 1.8% (p < 1e-20). Airflow particle counters, substrate lot chemistry, floor vibration sensors, and throughput density (Bay Beta ran 20% higher volume) showed zero disadvantage for Bay Alpha, and wafers processed automatically during unattended overnight robotic runs in Bay Alpha achieved a 1.7% defect rate.\n\nShift-log reviews identified one workflow divergence: Bay Alpha process engineers spent the first two hours of each shift inspecting failed copper-interconnect wafers in the wet-etch failure-analysis lab before entering Bay Alpha after a standard compressed-air shower. When Bay Alpha instituted a mandatory chelated-solvent glove-and-tool-swap protocol prior to bay entry, scrap rates fell to 1.9% within three weeks.",
+      "empirical_constraints": [
+        "E1: Bay Alpha and Bay Beta share one cleanroom, identical tools, and alternating-shift wafer batches, yet scrap is 9.8% vs 1.8%.",
+        "E2: HEPA air counts, substrate chemistry, vibration, and volume (Bay Beta higher) fail to explain it; unattended robotic runs in Bay Alpha have 1.7% defects.",
+        "E3: Bay Alpha engineers inspect failed copper-etch wafers in the failure-analysis lab before entering Bay Alpha with only an air shower.",
+        "E4: Requiring a chelated-solvent glove-and-tool-swap protocol before entering Bay Alpha drops scrap from 9.8% to 1.9%."
+      ],
+      "canonical_mechanism": "Direct physical transfer of trace metallic/ionic contamination carried on engineers' gloves/tools from the copper wet-etch lab onto wafers."
+    }
+  },
+  {
+    "pair_id": "contam_03",
+    "concept": "Automated QC outlier-filtering hiding extreme real regime shift (Antarctic Ozone Hole / TOMS)",
+    "orig": {
+      "id": "contam_03_orig",
+      "variant": "historical_original",
+      "domain": "Contamination Control",
+      "title": "Satellite-vs-Ground Discrepancy in Antarctic Springtime Ozone",
+      "dossier": "In the early 1980s, atmospheric scientists monitored Antarctic stratospheric ozone using both ground-based Dobson spectrophotometers at Halley Bay and NASA's Nimbus-7 Total Ozone Mapping Spectrometer (TOMS) satellite. Standard photochemical models predicted gradual, globally uniform ozone depletion of 1-2% per decade from chlorofluorocarbons, with no sudden seasonal collapse.\n\nBetween 1979 and 1984, the ground-based Halley Bay station recorded a shocking 40% drop in October total column ozone (plunging from ~300 Dobson Units to below 170 DU). Yet published Nimbus-7 TOMS satellite maps covering the exact same Antarctic coordinates during October continued to report stable ozone concentrations near 280-300 DU with zero evidence of a regional hole, leading analysts to suspect Halley Bay instrument degradation.\n\nIndependent calibration of the Halley Bay spectrophotometer with standard lamps and a second newly shipped instrument confirmed the <170 DU readings were real. Meanwhile, engineering checks of the Nimbus-7 satellite hardware confirmed its optical radiometers were operating nominally, yet the raw satellite photon counts had never been inspected directly without passing through the automated ground-station processing software.",
+      "empirical_constraints": [
+        "E1: Ground-based Halley Bay Dobson readings dropped 40% to <170 DU in October, confirmed by lamp calibration and a brand-new second instrument.",
+        "E2: Published Nimbus-7 TOMS satellite maps over the exact same coordinates reported normal ~280-300 DU.",
+        "E3: Satellite optical radiometer hardware passed engineering calibration checks.",
+        "E4: Raw satellite counts had only been viewed after automated ground-station data-processing pipelines."
+      ],
+      "canonical_mechanism": "Automated satellite QC software flagged values below a hardcoded threshold (~180 DU) as invalid instrument errors and discarded/replaced them."
+    },
+    "iso": {
+      "id": "contam_03_iso",
+      "variant": "isomorphic_transfer",
+      "domain": "Contamination Control",
+      "title": "Autonomous Buoy vs. Cabled-Array Discrepancy in Abyssal Thermal Plumes",
+      "dossier": "Oceanographers monitoring an abyssal mid-ocean ridge tracked bottom-water thermal anomalies using both a permanent cabled seafloor observatory network (36 fiber-linked thermistors feeding an automated cloud telemetry portal) and periodic dives by an independent autonomous underwater glider. Standard hydrothermal circulation models predict steady background bottom temperatures of 1.8 C with localized plume excursions never exceeding +0.6 C outside active vent chimneys.\n\nOver 14 months, three independent autonomous glider surveys crossing a newly fractured basalt ridge recorded an intense, basin-wide abyssal warming pulse reaching 5.9 C (+4.1 C above background). However, the official cabled-observatory dashboard directly spanning the same ridge reported flat, undisturbed temperatures of 1.85 C +/- 0.08 C throughout the entire 14-month window, prompting initial skepticism toward the glider's conductivity-temperature probes.\n\nPre- and post-dive triple-point water bath calibrations plus an independent ship-lowered CTD cast confirmed the 5.9 C abyssal anomaly was genuine. Simultaneously, diagnostic resistance-loop tests on the seafloor cabled thermistors verified intact hardware calibration, though scientists had only ever inspected the published Level-2 cleaned telemetry stream rather than raw unparsed ADC voltage packets.",
+      "empirical_constraints": [
+        "E1: Independent glider surveys and a ship-lowered CTD cast confirmed a genuine 5.9 C abyssal warming pulse.",
+        "E2: The cabled seafloor observatory spanning the same ridge reported flat 1.85 C on its published dashboard.",
+        "E3: Diagnostic resistance-loop tests confirmed the seafloor thermistor hardware itself was calibrated and intact.",
+        "E4: Analysts had only viewed Level-2 automated cleaned telemetry rather than raw ADC voltage packets."
+      ],
+      "canonical_mechanism": "Automated Level-2 cloud QA/QC filter hardcoded a physical ceiling/outlier threshold that silently rejected and interpolated over >5 C readings as sensor spikes."
+    }
+  },
+  {
+    "pair_id": "contam_04",
+    "concept": "Survivorship selection bias inverting damage distribution (Abraham Wald / bomber armor)",
+    "orig": {
+      "id": "contam_04_orig",
+      "variant": "historical_original",
+      "domain": "Contamination Control",
+      "title": "Spatial Clustering of Combat Damage on Returning Aircraft",
+      "dossier": "During an air campaign, military engineers analyzed structural damage maps across 420 heavy bombers returning from combat missions to decide where to bolt a strictly limited budget of additional steel armor plating. Under the initial engineering framing, the fuselage and wing regions sustaining the highest density of enemy flak and bullet hits represent the highest-risk vulnerability zones requiring immediate reinforcement.\n\nDamage tallies revealed a remarkably consistent, highly non-uniform spatial pattern (p < 1e-15): fuselage skins averaged 1.73 bullet holes per square foot and fuel-system fairings 1.55 holes/sq ft, whereas engine nacelles averaged only 1.11 holes/sq ft and cockpit/tail-linkage assemblies averaged 0.82 holes/sq ft. Aerodynamic and ballistic simulations confirmed that enemy anti-aircraft fire approached from isotropic angles and should strike all exposed cross-sectional areas uniformly per unit surface area.\n\nSquadron loss logs recorded that 18% of dispatched bombers failed to return from missions and were never recovered for inspection, while initial field trials adding heavy armor solely to the heavily perforated fuselage zones failed to produce any measurable reduction in overall mission attrition rates.",
+      "empirical_constraints": [
+        "E1: Returning bombers show high bullet density on fuselage/wings (1.73/sqft) and low density on engines/cockpit (0.82-1.11/sqft).",
+        "E2: Ballistic geometry confirms anti-aircraft hits are spatially uniform per unit exposed area.",
+        "E3: 18% of dispatched aircraft were lost in action and absent from the inspected dataset.",
+        "E4: Adding armor strictly to the heavily perforated fuselage regions failed to reduce mission loss rates."
+      ],
+      "canonical_mechanism": "Survivorship bias: missing holes on engines/cockpits correspond to fatal hits on aircraft that crashed and never returned; armor belongs where returning planes have fewest hits."
+    },
+    "iso": {
+      "id": "contam_04_iso",
+      "variant": "isomorphic_transfer",
+      "domain": "Contamination Control",
+      "title": "Impact-Damage Clustering on Returned Autonomous Alpine Delivery Drones",
+      "dossier": "A robotics logistics company inspected 1,400 autonomous quadcopters returning to mountain base stations after winter hail-and-debris delivery runs to decide where to apply a strict 40-gram budget of carbon-kevlar shielding. Under the engineering team's baseline reliability model, airframe zones showing the highest density of impact dents and micro-fractures experience the harshest aerodynamic debris exposure and should be reinforced first.\n\nAutomated optical scans of returned drones uncovered a stark, repeatable spatial asymmetry (p < 1e-15): outer carbon rotor booms averaged 3.4 impact dents per 100 cm^2 and cargo-pod shells averaged 2.9 dents per 100 cm^2, whereas central flight-controller housings averaged only 0.6 dents per 100 cm^2 and lithium-battery latch bays averaged 0.7 dents per 100 cm^2. Wind-tunnel particle-trajectory models verified that windborne ice pellets strike the drone's entire frontal silhouette uniformly per unit area.\n\nFleet operations logs noted that 14% of dispatched winter sorties terminated in unrecovered mid-air signal losses over steep ravines, and a 3-month pilot reinforcing only the heavily dented rotor booms and cargo pods produced zero reduction in the 14% unrecovered sortie loss rate.",
+      "empirical_constraints": [
+        "E1: Returned drones show dense hail dents on rotor booms/cargo pods (2.9-3.4/100cm^2) and sparse dents on flight-controller/battery bays (0.6-0.7/100cm^2).",
+        "E2: Wind-tunnel simulations confirm uniform debris impact density per unit frontal area.",
+        "E3: 14% of sorties suffer unrecovered mid-air signal loss and are absent from base-station optical scans.",
+        "E4: Reinforcing the heavily dented booms and cargo pods failed to reduce the 14% sortie loss rate."
+      ],
+      "canonical_mechanism": "Survivorship bias: impacts to the flight-controller housing or battery latch immediately cause fatal crashes over ravines, so only drones hit on non-fatal booms/pods return for inspection."
+    }
+  }
+]
